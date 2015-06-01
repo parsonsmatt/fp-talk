@@ -1,95 +1,582 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>Functional Programming -- What Even</title>
+    <title>Functional Programming -- What Even</title>
 
     <meta name="description" content="A brief talk on functional programming">
-		<meta name="author" content="Matt Parsons">
+    <meta name="author" content="Matt Parsons">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/solarized_dark.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/solarized_dark.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    <!-- Printing and PDF exports -->
+    <script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+      <script src="lib/js/html5shiv.js"></script>
+      <![endif]-->
+  </head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
-			<div class="slides">
-				<section data-markdown>
-# Functional Programming
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>
+            Functional Programming
+          </h1>
 
-## What Even?!
+          <h2 class="fragment">
+            What Even?!
+          </h2>
         </section>
-        <section data-markdown>
-# About Me
-
-* Programming for ~1.5 years
-* JAVA i guess
-* JavaScripted a few things
-* Responsible Rubying
+        <section>
+          <h1>
+            About Me
+          </h1>
+          <section>
+            <p>.</p>
+            <p>Matt Parsons</p>
+            <img src="matt_pro.jpg">
+            <p class="fragment">
+            this is me about two years ago trying to be an "IT PROFESSIONAL"
+            </p>
+          </section>
+          <section>
+            <img src="matt_awesome.jpg">
+            <p>
+            this is me now
+            </p>
+            <p class="fragment">
+            (yes, haskell will do that to you)
+            </p>
+            <p class="fragment">
+            (and maybe vim)
+            </p>
+          </section>
+          <section>
+            <ul>
+              <li>
+                Programming for <span class="fragment highlight-red" data-fragment-index="3">1½ years</span>
+              </li>
+              <li>
+                JAVA <span class="fragment" data-fragment-index="1">i guess</span>
+              </li>
+              <li>
+                Jolly JavaScripting
+              </li>
+              <li>
+                Responsible Rubying
+              </li>
+              <li class="fragment" data-fragment-index="2">
+                Heroic Haskelling
+              </li>
+            </ul>
+          </section>
+          <section>
+            <p>
+            i am such a beginner
+            </p>
+            <p class="fragment">
+            why am i talking to professionals
+            </p>
+            <p class="fragment">
+            they're going to know how little i know
+            </p>
+            <p class="fragment">
+            oh god what is happening
+            </p>
+          </section>
         </section>
-        <section data-markdown>
-          <pre>
-```ruby
-def method
-  @what = hello.map(&:go_away)
-end
-```</pre>
+        <section>
+          <p>
+          really though, what even is functional programming
+          </p>
         </section>
-			</div>
+        <section>
+          <section>
+            <h1>
+              Talking To Computers
+            </h1>
+            <ul>
+              <li>
+                That's what programming is!
+              </li>
+              <li>
+                Telling a computer "Please do this"
+              </li>
+              <li class="fragment">
+                Amelia Bedelia effect
+              </li>
+              <li class="fragment">
+                Kinda one sided
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h1>
+              Talking... At Computers?
+            </h1>
+          </section>
+          <section>
+            <h1>
+              Talking At Computers
+            </h1>
+            <ul>
+              <li>
+                We have to know exactly what we want
+              </li>
+              <li>
+                We have to express that in exactly the right way
+              </li>
+              <li class="fragment">
+                <h2 class="fragment highlight-red">
+                  It's so easy to screw up
+                </h2>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>
+              Talking <span class="highlight-blue fragment">With</span> Computers
+            </h1>
+          </section>
+          <section>
+            <h2>
+              Talking With Computers
+            </h2>
+            <p>
+            Let the computer talk back</p>
+            <p><span class="fragment">sometimes</span><span class="fragment">, maybe</span></p>
+            </p>
+          </section>
+          <section>
+            <h2>
+              Talking With Computers
+            </h2>
+            <ul>
+              <li>
+                Computers and humans have very different sorts of skills
+              </li>
+              <li>
+                Computers are absurdly good at math, logic, parsing
+              </li>
+              <li>
+                Humans are really good at design, creativity, and... well, not math
+              </li>
+              <li>
+                How to bridge the communication gap?
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Common CPU Backtalk</h2>
+            <ul>
+              <li>
+                Syntax highlighting, checking, formatting
+              </li>
+              <li>
+                Linting
+              </li>
+              <li>
+                Automated test suites
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Syntax Halp</h1>
+            <ul>
+              <li>
+                Grammatically correct code
+              </li>
+              <li>
+                Tremendously helpful
+              </li>
+            </ul>
+            <pre><code class="ruby"># spec/some_class_spec.rb
+describe SomeClass do
+  describe "#wow_such_do" do
+    context "as administrator" do
+      it "omg such code" do
+        expect(doge).to receive_message(:wat)
+      end
+    end
+  end
+end</code></pre>
+            </li>
+            <p class="fragment">
+            But...
+            </p>
+          </section>
+          <section>
+            <h2>Colorless Green Ideas Sleep Furiously</h2>
+            <p class="fragment">
+            wtf???
+            </p>
+            <p class="fragment">
+            Syntactically correct sentences can be meaningless
+            </p>
+            <p class="fragment">
+            or worse, mean something other than what we intended
+            </p>
+          </section>
+          <section>
+            <h2>
+              Linting
+            </h2>
+            <h3>
+              Rubocop, jshint, etc.
+            </h3>
+            <p class="fragment">
+            "This is grammatically correct, but you <em>probably</em> don't want to do this"
+            </p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Test Suites!</h1>
+            <p class="fragment">
+            Now that's getting closer!
+            </p>
+          </section>
+          <section>
+            <h2>"I want the code to do exactly these things"</h2>
+            <ul>
+              <li class="fragment">
+                Computer: "Your code does what the tests say!"
+              </li>
+              <li class="fragment">
+                or
+              </li>
+              <li class="fragment">
+                Computer: "Your code does this instead!"
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h1>But...</h1>
+          </section>
+          <section>
+            <h2>Test writing is hard</h2>
+            <h3>And it's easy to miss corner cases</h2>
+            <p>
+            What if there were some way to enumerate test cases automatically... <span class="fragment">;)</span>
+            </p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>
+              Is there some way to make the computer... <span class="fragment">understand?</span>
+            </h1>
+          </section>
+          <section>
+            <p>This is it. This is the motivation.</p>
+            <p class="fragment">The more the computer can understand, the more it can help us.</p>
+            <p class="fragment">
+            And I need all the help I can get!
+            </p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>
+              Big Three
+            </h1>
+            <ul>
+              <li>
+                Pure Functions
+              </li>
+              <li>
+                Referential Transparency
+              </li>
+              <li>
+                A Good Type System
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>
+              Pure Functions
+            </h1>
+            <ul>
+              <li>
+                A function can't have any side effects
+              </li>
+              <li>
+                Given the same input, a function will always return the same output
+              </li>
+            </ul>
+          </section>
+          <section>
+            <p>A side effect is "something that happens outside of the function"</p>
+            <ul>
+              <li class="fragment">
+                Printing to the screen
+              </li>
+              <li class="fragment">
+                updating a global/class/instance variable
+              </li>
+              <li class="fragment">
+                reading from the database
+              </li>
+              <li class="fragment">
+                <pre>rm -rf</pre>
+              </li>
+              <li class="fragment">
+                etc...
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Referential Transparency</h1>
+            <p>
+            Whenever you have an expression that looks like
+            </p>
+            <code>
+              some_thing = another_thing
+            </code>
+            <p>
+            Then you can use some_thing and another_thing interchangeably
+            </p>
+          </section>
+          <section data-markdown>
+            ## Even if they're functions!
 
-		</div>
+            ```javascript
+            var add = function(x, y) {
+                return x + y;
+            };
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+            var plus = add;
+            ```
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>
+              Equational Reasoning
+            </h1>
+            <p>
+            A phrase that's entirely too fancy
+            </p>
+          </section>
+          <section data-markdown>
+            ## Less fancy
 
-		<script>
+            * If I say that `foo = bar + quux`
+            * Then I can replace any `foo` with `bar + quux`
+          </section>
+        </section>
+        <section>
+          <h1>
+            That's all well and good...
+          </h1>
+          <h2 class="fragment">
+            But what's functional programming got to do with it?
+          </h2>
+        </section>
+        <section>
+          <p>I haven't seen a single map, filter, reduce...</p>
+          <p class="fragment">
+            What are those things called...
+          </p>
+          <p class="fragment">
+            Yonads? Bronads?
+          </p>
+        </section>
+        <section>
+          <h1>
+            Functional Programming
+          </h1>
+          <p>
+            Uses the 'Big Three' restrictions to make it easier for both humans and computers to understand code
+          </p>
+        </section>
+        <section>
+          <section>
+            <h1>
+              Where did it come from?
+            </h1>
+          </section>
+          <section>
+            <h1>
+              History Lesson
+            </h1>
+            <p class="fragment">oh god not history</p>
+            <ul>
+              <li>
+                Alonzo Church discovered The Lambda Calculus
+              </li>
+              <li>
+                Alan Turing discovered The Turing Machine
+              </li>
+              <li>
+                These models can compute anything that can be computed
+              </li>
+            </ul>
+            <p class="fragment">
+              history is the literal worst
+            </p>
+          </section>
+          <section>
+            <h1>
+              Lambda Calculus
+            </h1>
+            <ul>
+              <li>
+                All of math can be expressed as anonymous functions
+              </li>
+              <li>
+                LISP (1958) is straight up lambda calculus
+              </li>
+              <li>
+                ML (1973) started as a proof assistant based on typed lambda calculus
+              </li>
+              <li>
+                Haskell (1990) is invented for academics to experiment with laziness and purity
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h1>
+              Turing Machines
+            </h1>
+              <p>
+                An imaginary machine with infinite read/write tape, can move left/right on it, has a state machine
+              </p>
+            <ul>
+              <li>
+                Dominates programming and computer science
+              </li>
+              <li>
+                Assembly, Algol, C, C++, Java
+              </li>
+              <li class="fragment">
+                (fun fact: Algol almost didn't support recursion!)
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>
+              Ugh this is too difficult
+            </h1>
+            <h1 class="fragment">
+              We need to make it simpler
+            </h1>
+          </section>
+          <section>
+            <h1>
+              Objects to the rescue!
+            </h1>
+            <ul>
+              <li>
+                Alan Kay's Smalltalk programming language envisions a program as objects sending messages to each other
+              </li>
+              <li>
+                Object Oriented Programming
+              </li>
+              <li class="fragment">
+                Promptly ruined by Java and C++
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Maybe not?</h2>
+            <p>
+              OOP has like, 23 design patterns ?!
+            </p>
+            <p class="fragment">
+              Some of which are actually anti patterns? !?
+            </p>
+            <p class="fragment">
+              (Singleton, I'm looking at you)
+            </p>
+            <pre class="fragment"><code class="java">public final class Main {
+  public static void main(final String[] args) {
+    final ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+    final FizzBuzz myFizzBuzz = (FizzBuzz) context.getBean("standardFizzBuzz");
+    final FizzBuzzUpperLimitParameter fizzBuzzUpperLimit = 
+        new DefaultFizzBuzzUpperLimitParameter();
+    myFizzBuzz.fizzBuzz(fizzBuzzUpperLimit.obtainUpperLimitValue());
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+    ((ConfigurableApplicationContext) context).close();
+  }
+}</code></pre>
+          </section>
+          <section>
+            <h3>
+              halp?
+            </h3>
+            <p>
+              There are no "laws" about OOP
+            </p>
+            <p class="fragment">
+              It's a fragile system
+            </p>
+            <p class="fragment">
+              Requires a lot of skill and experience to get right
+            </p>
+          </section>
+        </section>
+        <!-- asdfasdf -->
+      </div>
+    </div>
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+    <script>
 
-		</script>
+// Full list of configuration options available at:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+  controls: true,
+  progress: true,
+  history: true,
+  center: true,
 
-	</body>
+  transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+    // Optional reveal.js plugins
+  dependencies: [
+  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+  { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'plugin/highlight/highlight.js', callback: function() { hljs.initHighlightingOnLoad(); } },
+    { src: 'plugin/zoom-js/zoom.js', async: true },
+      { src: 'plugin/notes/notes.js', async: true }
+  ]
+});
+
+    </script>
+
+  </body>
 </html>
