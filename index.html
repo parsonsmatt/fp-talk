@@ -104,6 +104,9 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
             oh god what is happening
             </p>
           </section>
+          <section>
+            <img src="wat-cat.jpg" alt="">
+          </section>
         </section>
         <section>
           <p>
@@ -113,20 +116,11 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
         <section>
           <section>
             <h1>
-              Talking To Computers
+              Telling Computers What To Do
             </h1>
             <ul>
-              <li>
-                That's what programming is!
-              </li>
-              <li>
-                Telling a computer "Please do this"
-              </li>
               <li class="fragment">
                 Amelia Bedelia effect
-              </li>
-              <li class="fragment">
-                Kinda one sided
               </li>
             </ul>
           </section>
@@ -157,12 +151,12 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
         <section>
           <section>
             <h1>
-              Talking <span class="highlight-blue fragment">With</span> Computers
+              Talking <span class="highlight-blue fragment">To</span> Computers
             </h1>
           </section>
           <section>
             <h2>
-              Talking With Computers
+              Talking to Computers
             </h2>
             <p>
             Let the computer talk back</p>
@@ -170,23 +164,9 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
             </p>
           </section>
           <section>
-            <h2>
-              Talking With Computers
-            </h2>
-            <ul>
-              <li>
-                Computers and humans have very different sorts of skills
-              </li>
-              <li>
-                Computers are absurdly good at math, logic, parsing
-              </li>
-              <li>
-                Humans are really good at design, creativity, and... well, not math
-              </li>
-              <li>
-                How to bridge the communication gap?
-              </li>
-            </ul>
+            <p>
+            <img src="man-machine.png" alt="">
+            </p>
           </section>
           <section>
             <h2>Common CPU Backtalk</h2>
@@ -215,12 +195,10 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
               </li>
             </ul>
             <pre><code class="ruby"># spec/some_class_spec.rb
-describe SomeClass do
-  describe "#wow_such_do" do
-    context "as administrator" do
-      it "omg such code" do
-        expect(doge).to receive_message(:wat)
-      end
+class SomeClass
+  def do_something
+    some_array.each do |item|
+      puts "#{item} is cool i guess"
     end
   end
 end</code></pre>
@@ -252,6 +230,8 @@ end</code></pre>
             "This is grammatically correct, but you <em>probably</em> don't want to do this"
             </p>
           </section>
+          <section data-background="grumpy-cat.jpg">
+          </section>
         </section>
         <section>
           <section>
@@ -262,17 +242,9 @@ end</code></pre>
           </section>
           <section>
             <h2>"I want the code to do exactly these things"</h2>
-            <ul>
-              <li class="fragment">
-                Computer: "Your code does what the tests say!"
-              </li>
-              <li class="fragment">
-                or
-              </li>
-              <li class="fragment">
-                Computer: "Your code does this instead!"
-              </li>
-            </ul>
+            <h3 class="fragment">
+              Computer: "Your code does what the tests say!"
+            </h3>
           </section>
           <section>
             <h1>But...</h1>
@@ -315,6 +287,9 @@ end</code></pre>
                 A Good Type System
               </li>
             </ul>
+          </section>
+          <section>
+            <img src="three-kittens.jpg" alt="">
           </section>
         </section>
         <section>
@@ -365,19 +340,6 @@ end</code></pre>
             Then you can use some_thing and another_thing interchangeably
             </p>
           </section>
-          <section data-markdown>
-            ## Even if they're functions!
-
-            ```javascript
-            var add = function(x, y) {
-                return x + y;
-            };
-
-            var plus = add;
-            ```
-          </section>
-        </section>
-        <section>
           <section>
             <h1>
               Equational Reasoning
@@ -394,6 +356,32 @@ end</code></pre>
           </section>
         </section>
         <section>
+          <section>
+            <h1>Types</h1>
+            <p class="fragment">
+            ain't your daddy's <code>int</code>
+            </p>
+            <div class="fragment">
+              or <code>ArrayList&lt;String&gt;</code>
+            </div>
+          </section>
+          <section>
+            <h1>
+              Mathemagical Proofs What
+            </h1>
+          </section>
+          <section>
+            <img src="wizard-cat-1.jpg" width="100%">
+          </section>
+          <section>
+            <img src="wizard-cat-2.jpg"  width="100%">
+          </section>
+          <section>
+            <img src="wizard-cat-3.jpg" width="100%">
+          </section>
+        </section>
+        
+        <section>
           <h1>
             That's all well and good...
           </h1>
@@ -404,10 +392,10 @@ end</code></pre>
         <section>
           <p>I haven't seen a single map, filter, reduce...</p>
           <p class="fragment">
-            What are those things called...
+          What are those things called...
           </p>
           <p class="fragment">
-            Yonads? Bronads?
+          Yonads? Bronads?
           </p>
         </section>
         <section>
@@ -415,7 +403,7 @@ end</code></pre>
             Functional Programming
           </h1>
           <p>
-            Uses the 'Big Three' restrictions to make it easier for both humans and computers to understand code
+          Making our code easier to understand for humans <em>and</em> computers by simplifying it
           </p>
         </section>
         <section>
@@ -441,7 +429,7 @@ end</code></pre>
               </li>
             </ul>
             <p class="fragment">
-              history is the literal worst
+            history is the literal worst
             </p>
           </section>
           <section>
@@ -464,12 +452,15 @@ end</code></pre>
             </ul>
           </section>
           <section>
+            <img src="cat-hetero.jpg" width="80%">
+          </section>
+          <section>
             <h1>
               Turing Machines
             </h1>
-              <p>
-                An imaginary machine with infinite read/write tape, can move left/right on it, has a state machine
-              </p>
+            <p>
+            An imaginary machine with infinite read/write tape, can move left/right on it, has a state machine
+            </p>
             <ul>
               <li>
                 Dominates programming and computer science
@@ -482,6 +473,30 @@ end</code></pre>
               </li>
             </ul>
           </section>
+        </section>
+        <section>
+          <h1>Much programming</h1>
+          <h1 class="fragment">
+            Wow
+          </h1>
+        </section>
+        <section>
+          <h1>
+            GOTO Considered harmful
+          </h1>
+          <h2 class="fragment">
+            GOTO Hell
+          </h2>
+          <p class="fragment">
+          oh crap sorry i don't mean that
+          </p>
+        </section>
+        <section>
+          <h2>Behold!</h2>
+          <pre><code class="javascript">for (int i = 0; i array.length; i++) {
+    console.log(array[i]);
+}</pre></code>
+          <h2 class="fragment">The face of controversy!</h2>
         </section>
         <section>
           <section>
@@ -511,13 +526,13 @@ end</code></pre>
           <section>
             <h2>Maybe not?</h2>
             <p>
-              OOP has like, 23 design patterns ?!
+            OOP has like, 23 design patterns ?!
             </p>
             <p class="fragment">
-              Some of which are actually anti patterns? !?
+            Some of which are actually anti patterns? !?
             </p>
             <p class="fragment">
-              (Singleton, I'm looking at you)
+            (Singleton, I'm looking at you)
             </p>
             <pre class="fragment"><code class="java">public final class Main {
   public static void main(final String[] args) {
@@ -536,16 +551,186 @@ end</code></pre>
               halp?
             </h3>
             <p>
-              There are no "laws" about OOP
+            There are no "laws" about OOP
             </p>
             <p class="fragment">
-              It's a fragile system
+            It's a fragile system
             </p>
             <p class="fragment">
-              Requires a lot of skill and experience to get right
+            Requires a lot of skill and experience to get right
             </p>
           </section>
         </section>
+        <section>
+          <h1>OOP is kinda scary</h1>
+        </section>
+        <section>
+          <section>
+            <h1>
+              But so is Haskell
+            </h1>
+            <h1 class="fragment">
+              right?
+            </h1>
+          </section>
+          <section>
+            <h2>Familiarity</h2>
+            <p class="fragment">Programming is hard.</p>
+            <p class="fragment">
+            Functional programming is like relearning programming over again
+            </p>
+          </section>
+          <section>
+            <p>
+            I argue that
+            </p>
+            <h1>
+              FP is easier than OOP
+            </h1>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>
+              Example
+            </h1>
+            <h1 class="fragment">
+              ==
+            </h1>
+            <h2 class="fragment">Pop quiz!</h2>
+          </section>
+          <section>
+            <h1>
+              Java
+            </h1>
+            <pre><code class="java">"Hello" == "Hello"</pre></code>
+            <pre class="fragment"><code class="java">String a = "Hello";
+a == "Hello";</code></pre>
+            <pre class="fragment"><code class="java">String b = new String("Hello");
+a == b;</code></pre>
+          </section>
+          <section>
+            <h1>Ruby</h1>
+            <pre><code class="ruby">x == x</code></pre>
+            <pre class="fragment"><code class="ruby">x = foo
+y = foo
+x == y</code></pre>
+            <pre class="fragment"><code class="ruby"># foo is actually Time.now</code></pre>
+          </section>
+          <section>
+            <h1>JarvaScript</h1>
+            <p class="fragment">
+            wat
+            </p>
+            <p class="fragment">
+            no really, wat
+            </p>
+          </section>
+        </section>
+        <section>
+          <h1>Give up a little</h1>
+          <h1 class="fragment">get a lot</h1>
+        </section>
+        <section>
+          <section>
+            <h2>But wait!</h2>
+            <h1>There's more!</h1>
+          </section>
+          <section>
+            <h1>go real fast go</h1>
+            <p>go go go go go go go</p>
+          </section>
+          <section>
+            <h2>
+              easier for humans
+            </h2>
+            <h2 class="fragment">
+              easier for computers
+            </h2>
+            <h2 class="fragment">
+              lots of optimization potential!
+            </h2>
+          </section>
+          <section>
+            <p>
+              <img src="cat-rabbit.jpeg" width="70%">
+            </p>
+          </section>
+          <section>
+            <img src="yesod-benchmark.png" width="90%" height="100%">
+          </section>
+          <section>
+            <img src="lions-hunting.jpg">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Learning FP</h1>
+          </section>
+          <section>
+            <h2>
+              Take it slow
+            </h2>
+            <ul>
+              <li>
+                Functional idioms in Ruby, JavaScript
+              </li>
+              <li>
+                Eloquent JavaScript
+              </li>
+              <li>
+                Hybrid languages like F#, Scala
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Dive right in!</h2>
+            <p>
+              Haskell
+            </p>
+            <ul>
+              <li>
+                The Gender Neutral Emperor of Functional Programming
+              </li>
+              <li>
+                Forces you to learn all about the functional idioms
+              </li>
+              <li>
+                By far best resource: https://github.com/bitemyapp/learnhaskell
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>
+              Using Functional Programming
+            </h1>
+          </section>
+          <section>
+            <h1>
+              Integrating
+            </h1>
+            <ul>
+              <li>
+                JavaScript: PureScript, ClojureScript, React, Ramda
+              </li>
+              <li>
+                JVM: Clojure, Scala
+              </li>
+              <li>
+                .NET: F# <span class="fragment">(does anyone use .NET these days?)</span>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h1>
+            thaaaaaanks
+          </h1>
+          <h3>questions?</h3>
+        </section>
+        
         <!-- asdfasdf -->
       </div>
     </div>
