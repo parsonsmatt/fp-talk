@@ -104,8 +104,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
             oh god what is happening
             </p>
           </section>
-          <section>
-            <img src="wat-cat.jpg" alt="">
+          <section data-background="wat-cat.jpg">
           </section>
         </section>
         <section>
@@ -230,7 +229,8 @@ end</code></pre>
             "This is grammatically correct, but you <em>probably</em> don't want to do this"
             </p>
           </section>
-          <section data-background="grumpy-cat.jpg">
+          <section>
+            <img src="grumpy-cat.jpg">
           </section>
         </section>
         <section>
@@ -272,7 +272,6 @@ end</code></pre>
           </section>
         </section>
         <section>
-          <section>
             <h1>
               Big Three
             </h1>
@@ -287,10 +286,8 @@ end</code></pre>
                 A Good Type System
               </li>
             </ul>
-          </section>
-          <section>
-            <img src="three-kittens.jpg" alt="">
-          </section>
+        </section>
+        <section data-background="three-kittens.jpg">
         </section>
         <section>
           <section>
@@ -351,8 +348,12 @@ end</code></pre>
           <section data-markdown>
             ## Less fancy
 
-            * If I say that `foo = bar + quux`
-            * Then I can replace any `foo` with `bar + quux`
+            * If I say that: 
+                * `a = b + c`
+            * And:  
+                * `a = 2 * d`
+            * Then:
+                * `2 * d = b + c`
           </section>
         </section>
         <section>
@@ -361,23 +362,24 @@ end</code></pre>
             <p class="fragment">
             ain't your daddy's <code>int</code>
             </p>
-            <div class="fragment">
+            <p class="fragment">
               or <code>ArrayList&lt;String&gt;</code>
-            </div>
+            </p>
+            <p class="fragment">
+              or <code>HashMap&lt;String, ArrayList&lt;Object&gt;&gt;</code>
+            </p>
           </section>
           <section>
             <h1>
               Mathemagical Proofs What
             </h1>
           </section>
-          <section>
-            <img src="wizard-cat-1.jpg" width="100%">
+          <section data-background="wizard-cat-1.jpg">
           </section>
           <section>
             <img src="wizard-cat-2.jpg"  width="100%">
           </section>
-          <section>
-            <img src="wizard-cat-3.jpg" width="100%">
+          <section data-background="wizard-cat-3.jpg" >
           </section>
         </section>
         
@@ -452,9 +454,6 @@ end</code></pre>
             </ul>
           </section>
           <section>
-            <img src="cat-hetero.jpg" width="80%">
-          </section>
-          <section>
             <h1>
               Turing Machines
             </h1>
@@ -473,6 +472,9 @@ end</code></pre>
               </li>
             </ul>
           </section>
+          <section>
+            <img src="cat-hetero.jpg" width="80%">
+          </section>
         </section>
         <section>
           <h1>Much programming</h1>
@@ -482,19 +484,27 @@ end</code></pre>
         </section>
         <section>
           <h1>
-            GOTO Considered harmful
+            GOTO Considered harmful<br>(1968)
           </h1>
-          <h2 class="fragment">
-            GOTO Hell
-          </h2>
-          <p class="fragment">
-          oh crap sorry i don't mean that
-          </p>
         </section>
         <section>
+          <h1>
+            GOTO Hell
+          </h1>
+          <p class="fragment">
+          oh crap sorry i don't mean that, about, like, y'all
+          </p>
+          <p class="fragment">
+            oh man this isn't going well
+          </p>
+
+        </section>
+        <section>
+         
           <h2>Behold!</h2>
-          <pre><code class="javascript">for (int i = 0; i array.length; i++) {
-    console.log(array[i]);
+          <pre style="font-size: 100%"><code class="c">for (int i = 0; i &lt;= array.length; i++)
+{
+    printf("%d\n", array[i]);
 }</pre></code>
           <h2 class="fragment">The face of controversy!</h2>
         </section>
@@ -603,19 +613,21 @@ end</code></pre>
             <h1>
               Java
             </h1>
-            <pre><code class="java">"Hello" == "Hello"</pre></code>
-            <pre class="fragment"><code class="java">String a = "Hello";
+            <pre style="font-size: 100%"><code class="java">"Hello" == "Hello"</pre></code>
+            <pre style="font-size: 100%" class="fragment"><code class="java">String a = "Hello";
 a == "Hello";</code></pre>
-            <pre class="fragment"><code class="java">String b = new String("Hello");
+            <pre class="fragment" style="font-size: 100%"><code class="java">String b = new String("Hello");
 a == b;</code></pre>
           </section>
           <section>
             <h1>Ruby</h1>
-            <pre><code class="ruby">x == x</code></pre>
-            <pre class="fragment"><code class="ruby">x = foo
-y = foo
-x == y</code></pre>
-            <pre class="fragment"><code class="ruby"># foo is actually Time.now</code></pre>
+            <pre style="font-size: 100%"><code class="ruby">x == x</code></pre>
+            <pre style="font-size: 100%" class="fragment"><code class="ruby">foo = x
+bar = x
+foo == bar</code></pre>
+            <pre style="font-size: 100%" class="fragment"><code class="ruby">def x 
+  Time.now
+end</code></pre>
           </section>
           <section>
             <h1>JarvaScript</h1>
@@ -630,6 +642,15 @@ x == y</code></pre>
         <section>
           <h1>Give up a little</h1>
           <h1 class="fragment">get a lot</h1>
+        </section>
+        <section>
+          <h1>
+            FP Only Has Two Things
+          </h1>
+          <h2>Nouns</h2>
+          <p>Immutable Datastructures</p>
+          <h2>Verbs</h2>
+          <p>Referentially transparent functions</p>
         </section>
         <section>
           <section>
@@ -652,9 +673,10 @@ x == y</code></pre>
             </h2>
           </section>
           <section>
-            <p>
+            <img src="rails-node.png" style="height:140%;">
+          </section>
+          <section>
               <img src="cat-rabbit.jpeg" width="70%">
-            </p>
           </section>
           <section>
             <img src="yesod-benchmark.png" width="90%" height="100%">
@@ -679,7 +701,7 @@ x == y</code></pre>
                 Eloquent JavaScript
               </li>
               <li>
-                Hybrid languages like F#, Scala
+                Hybrid languages like F#, Scala, Elixir
               </li>
             </ul>
           </section>
@@ -719,16 +741,35 @@ x == y</code></pre>
                 JVM: Clojure, Scala
               </li>
               <li>
-                .NET: F# <span class="fragment">(does anyone use .NET these days?)</span>
+                .NET: F#
               </li>
             </ul>
           </section>
+          <section>
+            <h1>
+              Brand New Project
+            </h1>
+            <p class="fragment">
+              Consider Haskell
+            </p>
+          </section>
         </section>
-        <section>
+        <section data-background="cat-weights.jpg">
+          <p></p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p></p>
           <h1>
-            thaaaaaanks
+            Thanks! :D
           </h1>
           <h3>questions?</h3>
+          
         </section>
         
         <!-- asdfasdf -->
